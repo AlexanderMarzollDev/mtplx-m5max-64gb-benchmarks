@@ -175,6 +175,24 @@ def main():
         grouped("moe-packs", "Qwen3.6-35B-A3B (MoE) packs on a 64GB Mac M5 Max: decode speed",
                 "mtplx 2.12.2, High Power mode; mean of clean runs", ["Code", "German prose", "43K context"],
                 [c[1] for c in cfgs], [[mean(c[0], t, moe) for t in ("code", "prosa", "lang")] for c in cfgs], "tokens per second")
+    # 7. Ternary Bonsai 2 27B vs. the regular 27B (25.10.)
+    bon = rows("2026-10-25_bonsai2-27b.json")
+    if bon:
+        grouped("bonsai-vs-27b", "Ternary Bonsai 2 27B vs. Qwen3.8-27B 4-bit on a 64GB Mac M5 Max",
+                "Decode speed, best setting each (27B: depth 3 + reserve; Bonsai: depth 1 + reserve)",
+                ["Code", "German prose", "43K context", "125K context"], ["Qwen3.8-27B Speed 4-bit", "Ternary Bonsai 2 27B"],
+                [[mean("27b-gr16k", "code", short), mean("27b-gr16k", "prosa", short), mean("27b-gr16k", "lang", short), mean("xl-cv262k", "xl", xl)],
+                 [mean("bonsai-d1", "code", bon), mean("bonsai-d1", "prosa", bon), mean("bonsai-d1", "lang", bon), mean("bonsai-xl-d1", "xl", bon)]],
+                "tokens per second")
+        def pk(lbl, task, data):
+            v = [r["peak_gb"] for r in data if r["label"] == lbl and r["task"] == task and r.get("peak_gb")]
+            return max(v) if v else None
+        grouped("bonsai-memory", "Peak memory: Ternary Bonsai 2 27B vs. Qwen3.8-27B, 64GB Mac M5 Max",
+                "Weights + KV cache + session cache; the regular 27B was refused at 164K",
+                ["~90-token prompt", "43K", "125K", "164K"], ["Qwen3.8-27B Speed 4-bit", "Ternary Bonsai 2 27B"],
+                [[pk("27b-gr16k", "code", short), pk("27b-gr16k", "lang", short), pk("xl-cv262k", "xl", xl), 57.8],
+                 [pk("bonsai-d1", "code", bon), pk("bonsai-d1", "lang", bon), pk("bonsai-xl-d1", "xl", bon), pk("bonsai-xxl-d1", "xl", bon)]],
+                "GB", note="164K, regular 27B: 57.8 GB at the moment the memory guard refused the request")
     print("charts written to", OUT)
 
 

@@ -1,0 +1,41 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='900' height='470' viewBox='0 0 900 470' font-family='-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif'>
+<rect width='900' height='470' fill='#1a1a19'/>
+<text x='64' y='34' font-size='19' font-weight='600' fill='#f0efec'>Ternary Bonsai 2 27B vs. Qwen3.8-27B 4-bit on a 64GB Mac M5 Max</text>
+<text x='64' y='58' font-size='13' fill='#c3c2b7'>Decode speed, best setting each (27B: depth 3 + reserve; Bonsai: depth 1 + reserve)</text>
+<rect x='64' y='76' width='12' height='12' rx='3' fill='#3987e5'/>
+<text x='82' y='87' font-size='13' fill='#f0efec'>Qwen3.8-27B Speed 4-bit</text>
+<rect x='260.20000000000005' y='76' width='12' height='12' rx='3' fill='#d95926'/>
+<text x='278.20000000000005' y='87' font-size='13' fill='#f0efec'>Ternary Bonsai 2 27B</text>
+<line x1='64' x2='876' y1='398.0' y2='398.0' stroke='#383835' stroke-width='1'/>
+<text x='56' y='402.0' font-size='11' text-anchor='end' fill='#c3c2b7'>0</text>
+<line x1='64' x2='876' y1='328.0' y2='328.0' stroke='#383835' stroke-width='1'/>
+<text x='56' y='332.0' font-size='11' text-anchor='end' fill='#c3c2b7'>25</text>
+<line x1='64' x2='876' y1='258.0' y2='258.0' stroke='#383835' stroke-width='1'/>
+<text x='56' y='262.0' font-size='11' text-anchor='end' fill='#c3c2b7'>50</text>
+<line x1='64' x2='876' y1='188.0' y2='188.0' stroke='#383835' stroke-width='1'/>
+<text x='56' y='192.0' font-size='11' text-anchor='end' fill='#c3c2b7'>75</text>
+<line x1='64' x2='876' y1='118.0' y2='118.0' stroke='#383835' stroke-width='1'/>
+<text x='56' y='122.0' font-size='11' text-anchor='end' fill='#c3c2b7'>100</text>
+<text x='14' y='258.0' font-size='12' fill='#c3c2b7' transform='rotate(-90 14 258.0)' text-anchor='middle'>tokens per second</text>
+<path d='M129.5,398.0 L129.5,220.3 Q129.5,216.3 133.5,216.3 L159.5,216.3 Q163.5,216.3 163.5,220.3 L163.5,398.0 Z' fill='#3987e5'><title>Qwen3.8-27B Speed 4-bit, Code: 64.9 tokens per second</title></path>
+<text x='146.5' y='211.3' font-size='11' text-anchor='middle' fill='#f0efec'>64.9</text>
+<path d='M165.5,398.0 L165.5,189.2 Q165.5,185.2 169.5,185.2 L195.5,185.2 Q199.5,185.2 199.5,189.2 L199.5,398.0 Z' fill='#d95926'><title>Ternary Bonsai 2 27B, Code: 76.0 tokens per second</title></path>
+<text x='182.5' y='180.2' font-size='11' text-anchor='middle' fill='#f0efec'>76</text>
+<text x='165.5' y='420' font-size='13' text-anchor='middle' fill='#f0efec'>Code</text>
+<path d='M332.5,398.0 L332.5,271.2 Q332.5,267.2 336.5,267.2 L362.5,267.2 Q366.5,267.2 366.5,271.2 L366.5,398.0 Z' fill='#3987e5'><title>Qwen3.8-27B Speed 4-bit, German prose: 46.7 tokens per second</title></path>
+<text x='349.5' y='262.2' font-size='11' text-anchor='middle' fill='#f0efec'>46.7</text>
+<path d='M368.5,398.0 L368.5,217.2 Q368.5,213.2 372.5,213.2 L398.5,213.2 Q402.5,213.2 402.5,217.2 L402.5,398.0 Z' fill='#d95926'><title>Ternary Bonsai 2 27B, German prose: 66.0 tokens per second</title></path>
+<text x='385.5' y='208.2' font-size='11' text-anchor='middle' fill='#f0efec'>66</text>
+<text x='368.5' y='420' font-size='13' text-anchor='middle' fill='#f0efec'>German prose</text>
+<path d='M535.5,398.0 L535.5,274.9 Q535.5,270.9 539.5,270.9 L565.5,270.9 Q569.5,270.9 569.5,274.9 L569.5,398.0 Z' fill='#3987e5'><title>Qwen3.8-27B Speed 4-bit, 43K context: 45.4 tokens per second</title></path>
+<text x='552.5' y='265.9' font-size='11' text-anchor='middle' fill='#f0efec'>45.4</text>
+<path d='M571.5,398.0 L571.5,255.8 Q571.5,251.8 575.5,251.8 L601.5,251.8 Q605.5,251.8 605.5,255.8 L605.5,398.0 Z' fill='#d95926'><title>Ternary Bonsai 2 27B, 43K context: 52.2 tokens per second</title></path>
+<text x='588.5' y='246.8' font-size='11' text-anchor='middle' fill='#f0efec'>52.2</text>
+<text x='571.5' y='420' font-size='13' text-anchor='middle' fill='#f0efec'>43K context</text>
+<path d='M738.5,398.0 L738.5,294.8 Q738.5,290.8 742.5,290.8 L768.5,290.8 Q772.5,290.8 772.5,294.8 L772.5,398.0 Z' fill='#3987e5'><title>Qwen3.8-27B Speed 4-bit, 125K context: 38.3 tokens per second</title></path>
+<text x='755.5' y='285.8' font-size='11' text-anchor='middle' fill='#f0efec'>38.3</text>
+<path d='M774.5,398.0 L774.5,301.2 Q774.5,297.2 778.5,297.2 L804.5,297.2 Q808.5,297.2 808.5,301.2 L808.5,398.0 Z' fill='#d95926'><title>Ternary Bonsai 2 27B, 125K context: 36.0 tokens per second</title></path>
+<text x='791.5' y='292.2' font-size='11' text-anchor='middle' fill='#f0efec'>36</text>
+<text x='774.5' y='420' font-size='13' text-anchor='middle' fill='#f0efec'>125K context</text>
+<line x1='64' x2='876' y1='398' y2='398' stroke='#c3c2b7' stroke-width='1'/>
+</svg>

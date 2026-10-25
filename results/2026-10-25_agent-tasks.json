@@ -1,0 +1,77 @@
+{
+ "note": "opencode run --auto, hidden tests, LIMIT 1200 s",
+ "runs": [
+  {
+   "model": "moe-s4-turbo",
+   "task": "t1_bugfix",
+   "rc": 0,
+   "secs": 27,
+   "pass": 6,
+   "total": 6,
+   "tool_lines": 22
+  },
+  {
+   "model": "moe-s4-turbo",
+   "task": "t2_feature",
+   "rc": 0,
+   "secs": 42,
+   "pass": 5,
+   "total": 5,
+   "tool_lines": 27
+  },
+  {
+   "model": "moe-s4-turbo",
+   "task": "t3_refactor",
+   "rc": 0,
+   "secs": 17,
+   "pass": 5,
+   "total": 5,
+   "tool_lines": 17
+  },
+  {
+   "model": "moe-s4-turbo",
+   "task": "t4_explore",
+   "rc": 0,
+   "secs": 19,
+   "pass": 5,
+   "total": 5,
+   "tool_lines": 16
+  },
+  {
+   "model": "bonsai",
+   "task": "t1_bugfix",
+   "rc": 0,
+   "secs": 82,
+   "pass": 6,
+   "total": 6,
+   "tool_lines": 15
+  },
+  {
+   "model": "bonsai",
+   "task": "t2_feature",
+   "rc": 0,
+   "secs": 446,
+   "pass": 5,
+   "total": 5,
+   "tool_lines": 60
+  },
+  {
+   "model": "bonsai",
+   "task": "t3_refactor",
+   "rc": 0,
+   "secs": 87,
+   "pass": 5,
+   "total": 5,
+   "tool_lines": 39
+  },
+  {
+   "model": "bonsai",
+   "task": "t4_explore",
+   "rc": 0,
+   "secs": 242,
+   "pass": 5,
+   "total": 5,
+   "tool_lines": 24
+  }
+ ]
+}

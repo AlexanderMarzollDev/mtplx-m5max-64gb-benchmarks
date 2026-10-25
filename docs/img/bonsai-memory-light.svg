@@ -1,0 +1,42 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='900' height='470' viewBox='0 0 900 470' font-family='-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif'>
+<rect width='900' height='470' fill='#fcfcfb'/>
+<text x='64' y='34' font-size='19' font-weight='600' fill='#0b0b0b'>Peak memory: Ternary Bonsai 2 27B vs. Qwen3.8-27B, 64GB Mac M5 Max</text>
+<text x='64' y='58' font-size='13' fill='#52514e'>Weights + KV cache + session cache; the regular 27B was refused at 164K</text>
+<rect x='64' y='76' width='12' height='12' rx='3' fill='#2a78d6'/>
+<text x='82' y='87' font-size='13' fill='#0b0b0b'>Qwen3.8-27B Speed 4-bit</text>
+<rect x='260.20000000000005' y='76' width='12' height='12' rx='3' fill='#eb6834'/>
+<text x='278.20000000000005' y='87' font-size='13' fill='#0b0b0b'>Ternary Bonsai 2 27B</text>
+<line x1='64' x2='876' y1='398.0' y2='398.0' stroke='#e6e5e1' stroke-width='1'/>
+<text x='56' y='402.0' font-size='11' text-anchor='end' fill='#52514e'>0</text>
+<line x1='64' x2='876' y1='328.0' y2='328.0' stroke='#e6e5e1' stroke-width='1'/>
+<text x='56' y='332.0' font-size='11' text-anchor='end' fill='#52514e'>20</text>
+<line x1='64' x2='876' y1='258.0' y2='258.0' stroke='#e6e5e1' stroke-width='1'/>
+<text x='56' y='262.0' font-size='11' text-anchor='end' fill='#52514e'>40</text>
+<line x1='64' x2='876' y1='188.0' y2='188.0' stroke='#e6e5e1' stroke-width='1'/>
+<text x='56' y='192.0' font-size='11' text-anchor='end' fill='#52514e'>60</text>
+<line x1='64' x2='876' y1='118.0' y2='118.0' stroke='#e6e5e1' stroke-width='1'/>
+<text x='56' y='122.0' font-size='11' text-anchor='end' fill='#52514e'>80</text>
+<text x='14' y='258.0' font-size='12' fill='#52514e' transform='rotate(-90 14 258.0)' text-anchor='middle'>GB</text>
+<path d='M129.5,398.0 L129.5,320.4 Q129.5,316.4 133.5,316.4 L159.5,316.4 Q163.5,316.4 163.5,320.4 L163.5,398.0 Z' fill='#2a78d6'><title>Qwen3.8-27B Speed 4-bit, ~90-token prompt: 23.3 GB</title></path>
+<text x='146.5' y='311.4' font-size='11' text-anchor='middle' fill='#0b0b0b'>23.3</text>
+<path d='M165.5,398.0 L165.5,364.9 Q165.5,360.9 169.5,360.9 L195.5,360.9 Q199.5,360.9 199.5,364.9 L199.5,398.0 Z' fill='#eb6834'><title>Ternary Bonsai 2 27B, ~90-token prompt: 10.6 GB</title></path>
+<text x='182.5' y='355.9' font-size='11' text-anchor='middle' fill='#0b0b0b'>10.6</text>
+<text x='165.5' y='420' font-size='13' text-anchor='middle' fill='#0b0b0b'>~90-token prompt</text>
+<path d='M332.5,398.0 L332.5,270.8 Q332.5,266.8 336.5,266.8 L362.5,266.8 Q366.5,266.8 366.5,270.8 L366.5,398.0 Z' fill='#2a78d6'><title>Qwen3.8-27B Speed 4-bit, 43K: 37.5 GB</title></path>
+<text x='349.5' y='261.8' font-size='11' text-anchor='middle' fill='#0b0b0b'>37.5</text>
+<path d='M368.5,398.0 L368.5,311.7 Q368.5,307.7 372.5,307.7 L398.5,307.7 Q402.5,307.7 402.5,311.7 L402.5,398.0 Z' fill='#eb6834'><title>Ternary Bonsai 2 27B, 43K: 25.8 GB</title></path>
+<text x='385.5' y='302.7' font-size='11' text-anchor='middle' fill='#0b0b0b'>25.8</text>
+<text x='368.5' y='420' font-size='13' text-anchor='middle' fill='#0b0b0b'>43K</text>
+<path d='M535.5,398.0 L535.5,255.0 Q535.5,251.0 539.5,251.0 L565.5,251.0 Q569.5,251.0 569.5,255.0 L569.5,398.0 Z' fill='#2a78d6'><title>Qwen3.8-27B Speed 4-bit, 125K: 42.0 GB</title></path>
+<text x='552.5' y='246.0' font-size='11' text-anchor='middle' fill='#0b0b0b'>42</text>
+<path d='M571.5,398.0 L571.5,299.8 Q571.5,295.8 575.5,295.8 L601.5,295.8 Q605.5,295.8 605.5,299.8 L605.5,398.0 Z' fill='#eb6834'><title>Ternary Bonsai 2 27B, 125K: 29.2 GB</title></path>
+<text x='588.5' y='290.8' font-size='11' text-anchor='middle' fill='#0b0b0b'>29.2</text>
+<text x='571.5' y='420' font-size='13' text-anchor='middle' fill='#0b0b0b'>125K</text>
+<path d='M738.5,398.0 L738.5,199.7 Q738.5,195.7 742.5,195.7 L768.5,195.7 Q772.5,195.7 772.5,199.7 L772.5,398.0 Z' fill='#2a78d6'><title>Qwen3.8-27B Speed 4-bit, 164K: 57.8 GB</title></path>
+<text x='755.5' y='190.7' font-size='11' text-anchor='middle' fill='#0b0b0b'>57.8</text>
+<path d='M774.5,398.0 L774.5,280.9 Q774.5,276.9 778.5,276.9 L804.5,276.9 Q808.5,276.9 808.5,280.9 L808.5,398.0 Z' fill='#eb6834'><title>Ternary Bonsai 2 27B, 164K: 34.6 GB</title></path>
+<text x='791.5' y='271.9' font-size='11' text-anchor='middle' fill='#0b0b0b'>34.6</text>
+<text x='774.5' y='420' font-size='13' text-anchor='middle' fill='#0b0b0b'>164K</text>
+<line x1='64' x2='876' y1='398' y2='398' stroke='#52514e' stroke-width='1'/>
+<text x='64' y='454' font-size='11' fill='#52514e'>164K, regular 27B: 57.8 GB at the moment the memory guard refused the request</text>
+</svg>
