@@ -17,7 +17,8 @@ chart script are in this repo.
 > (USB-C liefert höchstens 100 W), sonst sind die Zahlen nicht vergleichbar.
 > **Ternary Bonsai 2 27B** (dasselbe Qwen3.8-27B, ternär, 8 GB) ist bei kurzem und mittlerem Kontext
 > 15 bis 41 % schneller, braucht etwa die Hälfte des Speichers und schafft 164K, wo das normale 27B
-> an den 64 GB scheitert; alle versteckten Tests bestanden, die Qualität ist aber nur grob geprüft.
+> an den 64 GB scheitert. Achtung: Laut PrismML selbst verliert es bei SWE-bench Verified und
+> Terminal-Bench rund 25 % gegenüber dem Original, für agentisches Coding also kein gleichwertiger Ersatz.
 
 ## Key findings
 
@@ -31,7 +32,7 @@ chart script are in this repo.
 | 6 | **Long context fits, with care.** 125K works (42 GB peak, ~3.7 min cold prefill). A 164K request with a 262K window grew the KV by +15.7 GB in one step and was refused at 57.8 GB. | Size the window to what you need |
 | 7 | **The machine matters as much as the flags.** High Power mode, 140 W on MagSafe, a quiet machine, one model loaded. | see [checklist](docs/checklist.md) |
 | 8 | **mtplx was the best all-round engine for these Qwen models**, but not in every column: oMLX with MTP decoded the MoE faster in a short test, LM Studio prefilled the 27B faster (735 vs 660 tok/s) at half the decode speed, and lithos-metal finished the 27B agent tasks faster (690 vs 963 s, one hidden test failed). | see [engines](#engines) |
-| 9 | **Ternary Bonsai 2 27B** (Prism ML's ternary Qwen3.8-27B, 8.2 GB pack) at depth 1: faster than the regular 4-bit 27B except at 125K, half the memory, and it serves 164K where the 4-bit pack is refused. | Code 76, prose 66, 43K 52, 125K 36 tok/s; 11-35 GB peak |
+| 9 | **Ternary Bonsai 2 27B** (Prism ML's ternary Qwen3.8-27B, 8.2 GB pack) at depth 1: faster than the regular 4-bit 27B except at 125K, half the memory, and it serves 164K where the 4-bit pack is refused. **But** by Prism ML's own numbers it loses ~25 % on SWE-bench Verified and Terminal-Bench: good for long reading, not a drop-in for agentic coding. | Code 76, prose 66, 43K 52, 125K 36 tok/s; 11-35 GB peak |
 
 ## Machine and software
 
@@ -146,8 +147,21 @@ Agent tasks with the winning setting (turbo, depth 1): **21/21 hidden tests in 1
 ### Ternary Bonsai 2 27B: same model, ternary weights
 
 [Ternary Bonsai 2 27B](https://huggingface.co/Youssofal/Ternary-Bonsai-2-27B-MTPLX-Optimized-Speed)
-is Prism ML's ternary version of Qwen3.8-27B (Prism ML reports 98.2 % of the original's benchmark
-average on its own suite; not independently verified). The mtplx pack is 8.2 GB instead of ~20 GB.
+is Prism ML's ternary version of Qwen3.8-27B. The mtplx pack is 8.2 GB instead of ~20 GB.
+
+**Read this before switching for agentic coding.** Prism ML reports 98.2 % of the original's average
+over 20 benchmarks, but the average hides the agentic gap (Prism ML's own numbers, not independently
+reproduced, not measured by us):
+
+| Benchmark | Qwen3.8-27B | Bonsai 2 27B |
+|---|---|---|
+| SWE-bench Verified | 80.6 | **60.8** (-25 %) |
+| Terminal-Bench 2.1 | 69.7 | **52.8** (-24 %) |
+| LiveCodeBench | 90.05 | 90.07 |
+| 20-benchmark average | 85.4 | 83.9 (98.2 %) |
+
+Single-function coding is on par; multi-step repository work is clearly weaker. Our four small agent
+tasks cannot show this difference.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="docs/img/bonsai-vs-27b-dark.svg">
