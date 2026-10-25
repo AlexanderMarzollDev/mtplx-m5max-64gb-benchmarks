@@ -1,0 +1,387 @@
+{
+ "note": "~125K-token prompt, 8K max output, needle at 60 % depth",
+ "sampling": "server default (temperature 1.0, top-p 0.95, top-k 20 for the 27B pack)",
+ "excluded_in_tables": "rows with error, empty output or load1 > 12",
+ "rows": [
+  {
+   "label": "xl-d3",
+   "model": "qwen3.8-27b-mtplx",
+   "task": "xl",
+   "rep": 0,
+   "prompt_tokens": 124873,
+   "completion_tokens": 8000,
+   "ttft_s": 235.1,
+   "total_s": 451.3,
+   "decode_tok_s": 37.1,
+   "client_decode_tok_s": 37.0,
+   "prefill_tok_s": 534,
+   "first256": 41.7,
+   "last256": 38.7,
+   "mtp_depth": 3,
+   "accept": 0.76,
+   "accepted_by_depth": [
+    2072,
+    1762,
+    1529
+   ],
+   "drafted_by_depth": [
+    2352,
+    2351,
+    2351
+   ],
+   "cv_compiled": 143,
+   "cv_calls": 2352,
+   "peak_gb": 41.2,
+   "active_gb": 40.0,
+   "thermal": "heavy",
+   "load1": 3.2,
+   "temp": 1.0,
+   "needle_ok": true,
+   "env": {
+    "MTPLX_CONTEXT": "262144"
+   }
+  },
+  {
+   "label": "xl-d3",
+   "model": "qwen3.8-27b-mtplx",
+   "task": "xlw",
+   "rep": 0,
+   "prompt_tokens": 124873,
+   "completion_tokens": 8000,
+   "ttft_s": 224.62,
+   "total_s": 441.1,
+   "decode_tok_s": 37.1,
+   "client_decode_tok_s": 37.0,
+   "prefill_tok_s": 559,
+   "first256": 42.6,
+   "last256": 37.5,
+   "mtp_depth": 3,
+   "accept": 0.746,
+   "accepted_by_depth": [
+    2073,
+    1716,
+    1467
+   ],
+   "drafted_by_depth": [
+    2349,
+    2349,
+    2348
+   ],
+   "cv_compiled": 142,
+   "cv_calls": 2349,
+   "peak_gb": 41.2,
+   "active_gb": 29.9,
+   "thermal": "heavy",
+   "load1": 2.3,
+   "temp": 1.0,
+   "needle_ok": true,
+   "env": {
+    "MTPLX_CONTEXT": "262144"
+   }
+  },
+  {
+   "label": "xl-cv262k",
+   "model": "qwen3.8-27b-mtplx",
+   "task": "xl",
+   "rep": 0,
+   "prompt_tokens": 124873,
+   "completion_tokens": 6674,
+   "ttft_s": 224.19,
+   "total_s": 399.0,
+   "decode_tok_s": 38.3,
+   "client_decode_tok_s": 38.2,
+   "prefill_tok_s": 561,
+   "first256": 39.5,
+   "last256": 38.3,
+   "mtp_depth": 3,
+   "accept": 0.701,
+   "accepted_by_depth": [
+    1754,
+    1435,
+    1164
+   ],
+   "drafted_by_depth": [
+    2069,
+    2069,
+    2069
+   ],
+   "cv_compiled": 2069,
+   "cv_calls": 2069,
+   "peak_gb": 42.0,
+   "active_gb": 40.7,
+   "thermal": "heavy",
+   "load1": 3.0,
+   "temp": 1.0,
+   "needle_ok": true,
+   "env": {
+    "MTPLX_CONTEXT": "262144",
+    "MTPLX_COMPILED_VERIFY_MAX_CONTEXT": "262144",
+    "MTPLX_COMPILED_VERIFY_GROWTH_RESERVE": "16384"
+   }
+  },
+  {
+   "label": "xl-cv262k",
+   "model": "qwen3.8-27b-mtplx",
+   "task": "xlw",
+   "rep": 0,
+   "prompt_tokens": 124873,
+   "completion_tokens": 8000,
+   "ttft_s": 223.32,
+   "total_s": 430.5,
+   "decode_tok_s": 38.8,
+   "client_decode_tok_s": 38.6,
+   "prefill_tok_s": 563,
+   "first256": 43.2,
+   "last256": 38.3,
+   "mtp_depth": 3,
+   "accept": 0.729,
+   "accepted_by_depth": [
+    2087,
+    1735,
+    1452
+   ],
+   "drafted_by_depth": [
+    2411,
+    2411,
+    2410
+   ],
+   "cv_compiled": 2411,
+   "cv_calls": 2411,
+   "peak_gb": 42.0,
+   "active_gb": 29.9,
+   "thermal": "heavy",
+   "load1": 1.5,
+   "temp": 1.0,
+   "needle_ok": true,
+   "env": {
+    "MTPLX_CONTEXT": "262144",
+    "MTPLX_COMPILED_VERIFY_MAX_CONTEXT": "262144",
+    "MTPLX_COMPILED_VERIFY_GROWTH_RESERVE": "16384"
+   }
+  },
+  {
+   "label": "xl-cv-chunk4k",
+   "model": "qwen3.8-27b-mtplx",
+   "task": "xl",
+   "rep": 0,
+   "prompt_tokens": 124873,
+   "completion_tokens": 8000,
+   "ttft_s": 222.84,
+   "total_s": 426.2,
+   "decode_tok_s": 39.5,
+   "client_decode_tok_s": 39.3,
+   "prefill_tok_s": 562,
+   "first256": 42.5,
+   "last256": 39.3,
+   "mtp_depth": 3,
+   "accept": 0.737,
+   "accepted_by_depth": [
+    2134,
+    1760,
+    1429
+   ],
+   "drafted_by_depth": [
+    2406,
+    2406,
+    2406
+   ],
+   "cv_compiled": 2406,
+   "cv_calls": 2406,
+   "peak_gb": 41.6,
+   "active_gb": 40.7,
+   "thermal": "heavy",
+   "load1": 1.2,
+   "temp": 1.0,
+   "needle_ok": true,
+   "env": {
+    "MTPLX_CONTEXT": "262144",
+    "MTPLX_COMPILED_VERIFY_MAX_CONTEXT": "262144",
+    "MTPLX_COMPILED_VERIFY_GROWTH_RESERVE": "16384",
+    "MTPLX_PREFILL_CHUNK_SIZE_DENSE": "4096",
+    "MTPLX_PREFILL_CHUNK_SIZE_REPAGE": "4096"
+   }
+  },
+  {
+   "label": "xl-cv-chunk4k",
+   "model": "qwen3.8-27b-mtplx",
+   "task": "xlw",
+   "rep": 0,
+   "prompt_tokens": 124873,
+   "completion_tokens": 8000,
+   "ttft_s": 225.59,
+   "total_s": 428.1,
+   "decode_tok_s": 39.7,
+   "client_decode_tok_s": 39.5,
+   "prefill_tok_s": 557,
+   "first256": 45.7,
+   "last256": 37.3,
+   "mtp_depth": 3,
+   "accept": 0.744,
+   "accepted_by_depth": [
+    2095,
+    1746,
+    1461
+   ],
+   "drafted_by_depth": [
+    2377,
+    2376,
+    2376
+   ],
+   "cv_compiled": 2377,
+   "cv_calls": 2377,
+   "peak_gb": 41.6,
+   "active_gb": 29.9,
+   "thermal": "heavy",
+   "load1": 1.8,
+   "temp": 1.0,
+   "needle_ok": true,
+   "env": {
+    "MTPLX_CONTEXT": "262144",
+    "MTPLX_COMPILED_VERIFY_MAX_CONTEXT": "262144",
+    "MTPLX_COMPILED_VERIFY_GROWTH_RESERVE": "16384",
+    "MTPLX_PREFILL_CHUNK_SIZE_DENSE": "4096",
+    "MTPLX_PREFILL_CHUNK_SIZE_REPAGE": "4096"
+   }
+  },
+  {
+   "label": "xl-cv-d2",
+   "model": "qwen3.8-27b-mtplx",
+   "task": "xl",
+   "rep": 0,
+   "prompt_tokens": 124873,
+   "completion_tokens": 8000,
+   "ttft_s": 221.51,
+   "total_s": 460.6,
+   "decode_tok_s": 33.6,
+   "client_decode_tok_s": 33.5,
+   "prefill_tok_s": 566,
+   "first256": 35.9,
+   "last256": 32.4,
+   "mtp_depth": 2,
+   "accept": 0.819,
+   "accepted_by_depth": [
+    2540,
+    2154
+   ],
+   "drafted_by_depth": [
+    2866,
+    2865
+   ],
+   "cv_compiled": 2866,
+   "cv_calls": 2866,
+   "peak_gb": 41.7,
+   "active_gb": 40.7,
+   "thermal": "heavy",
+   "load1": 1.0,
+   "temp": 1.0,
+   "needle_ok": true,
+   "env": {
+    "MTPLX_CONTEXT": "262144",
+    "MTPLX_COMPILED_VERIFY_MAX_CONTEXT": "262144",
+    "MTPLX_COMPILED_VERIFY_GROWTH_RESERVE": "16384",
+    "MTPLX_DEPTH": "2"
+   }
+  },
+  {
+   "label": "xl-cv-d2",
+   "model": "qwen3.8-27b-mtplx",
+   "task": "xlw",
+   "rep": 0,
+   "prompt_tokens": 124873,
+   "completion_tokens": 8000,
+   "ttft_s": 221.95,
+   "total_s": 459.6,
+   "decode_tok_s": 33.8,
+   "client_decode_tok_s": 33.7,
+   "prefill_tok_s": 566,
+   "first256": 36.0,
+   "last256": 36.2,
+   "mtp_depth": 2,
+   "accept": 0.822,
+   "accepted_by_depth": [
+    2568,
+    2159
+   ],
+   "drafted_by_depth": [
+    2874,
+    2874
+   ],
+   "cv_compiled": 2874,
+   "cv_calls": 2874,
+   "peak_gb": 41.7,
+   "active_gb": 29.9,
+   "thermal": "heavy",
+   "load1": 0.9,
+   "temp": 1.0,
+   "needle_ok": true,
+   "env": {
+    "MTPLX_CONTEXT": "262144",
+    "MTPLX_COMPILED_VERIFY_MAX_CONTEXT": "262144",
+    "MTPLX_COMPILED_VERIFY_GROWTH_RESERVE": "16384",
+    "MTPLX_DEPTH": "2"
+   }
+  },
+  {
+   "label": "xl-ar",
+   "model": "qwen3.8-27b-mtplx",
+   "task": "xl",
+   "rep": 0,
+   "prompt_tokens": 124873,
+   "completion_tokens": 8000,
+   "ttft_s": 214.92,
+   "total_s": 674.5,
+   "decode_tok_s": 17.4,
+   "client_decode_tok_s": 17.4,
+   "prefill_tok_s": 585,
+   "first256": 17.2,
+   "last256": 17.2,
+   "mtp_depth": 0,
+   "accept": null,
+   "accepted_by_depth": [],
+   "drafted_by_depth": [],
+   "cv_compiled": null,
+   "cv_calls": null,
+   "peak_gb": 40.2,
+   "active_gb": 39.3,
+   "thermal": "heavy",
+   "load1": 2.1,
+   "temp": 1.0,
+   "needle_ok": true,
+   "env": {
+    "MTPLX_CONTEXT": "262144",
+    "MTPLX_EXTRA": "--no-mtp"
+   }
+  },
+  {
+   "label": "xl-ar",
+   "model": "qwen3.8-27b-mtplx",
+   "task": "xlw",
+   "rep": 0,
+   "prompt_tokens": 124873,
+   "completion_tokens": 2197,
+   "ttft_s": 227.3,
+   "total_s": 362.6,
+   "decode_tok_s": 16.3,
+   "client_decode_tok_s": 16.2,
+   "prefill_tok_s": 553,
+   "first256": 16.1,
+   "last256": 16.3,
+   "mtp_depth": 0,
+   "accept": null,
+   "accepted_by_depth": [],
+   "drafted_by_depth": [],
+   "cv_compiled": null,
+   "cv_calls": null,
+   "peak_gb": 40.2,
+   "active_gb": 29.0,
+   "thermal": "heavy",
+   "load1": 2.1,
+   "temp": 1.0,
+   "needle_ok": true,
+   "env": {
+    "MTPLX_CONTEXT": "262144",
+    "MTPLX_EXTRA": "--no-mtp"
+   }
+  }
+ ]
+}

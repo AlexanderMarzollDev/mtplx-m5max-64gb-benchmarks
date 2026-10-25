@@ -1,0 +1,52 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='900' height='470' viewBox='0 0 900 470' font-family='-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif'>
+<rect width='900' height='470' fill='#1a1a19'/>
+<text x='64' y='34' font-size='19' font-weight='600' fill='#f0efec'>Qwen3.6-35B-A3B (MoE) packs on a 64GB Mac M5 Max: decode speed</text>
+<text x='64' y='58' font-size='13' fill='#c3c2b7'>mtplx 2.12.2, High Power mode; mean of clean runs</text>
+<rect x='64' y='76' width='12' height='12' rx='3' fill='#3987e5'/>
+<text x='82' y='87' font-size='13' fill='#f0efec'>Balance 6-bit, depth 1, KV q8</text>
+<rect x='304.6' y='76' width='12' height='12' rx='3' fill='#d95926'/>
+<text x='322.6' y='87' font-size='13' fill='#f0efec'>Speed 4-bit, sustained default</text>
+<rect x='552.6' y='76' width='12' height='12' rx='3' fill='#199e70'/>
+<text x='570.6' y='87' font-size='13' fill='#f0efec'>Speed 4-bit, turbo depth 1</text>
+<rect x='771.0' y='76' width='12' height='12' rx='3' fill='#c98500'/>
+<text x='789.0' y='87' font-size='13' fill='#f0efec'>Speed 4-bit, turbo depth 2</text>
+<line x1='64' x2='876' y1='398.0' y2='398.0' stroke='#383835' stroke-width='1'/>
+<text x='56' y='402.0' font-size='11' text-anchor='end' fill='#c3c2b7'>0</text>
+<line x1='64' x2='876' y1='328.0' y2='328.0' stroke='#383835' stroke-width='1'/>
+<text x='56' y='332.0' font-size='11' text-anchor='end' fill='#c3c2b7'>50</text>
+<line x1='64' x2='876' y1='258.0' y2='258.0' stroke='#383835' stroke-width='1'/>
+<text x='56' y='262.0' font-size='11' text-anchor='end' fill='#c3c2b7'>100</text>
+<line x1='64' x2='876' y1='188.0' y2='188.0' stroke='#383835' stroke-width='1'/>
+<text x='56' y='192.0' font-size='11' text-anchor='end' fill='#c3c2b7'>150</text>
+<line x1='64' x2='876' y1='118.0' y2='118.0' stroke='#383835' stroke-width='1'/>
+<text x='56' y='122.0' font-size='11' text-anchor='end' fill='#c3c2b7'>200</text>
+<text x='14' y='258.0' font-size='12' fill='#c3c2b7' transform='rotate(-90 14 258.0)' text-anchor='middle'>tokens per second</text>
+<path d='M127.3,398.0 L127.3,239.9 Q127.3,235.9 131.3,235.9 L157.3,235.9 Q161.3,235.9 161.3,239.9 L161.3,398.0 Z' fill='#3987e5'><title>Balance 6-bit, depth 1, KV q8, Code: 115.8 tokens per second</title></path>
+<text x='144.3' y='230.9' font-size='11' text-anchor='middle' fill='#f0efec'>115.8</text>
+<path d='M163.3,398.0 L163.3,205.4 Q163.3,201.4 167.3,201.4 L193.3,201.4 Q197.3,201.4 197.3,205.4 L197.3,398.0 Z' fill='#d95926'><title>Speed 4-bit, sustained default, Code: 140.4 tokens per second</title></path>
+<text x='180.3' y='196.4' font-size='11' text-anchor='middle' fill='#f0efec'>140.4</text>
+<path d='M199.3,398.0 L199.3,182.3 Q199.3,178.3 203.3,178.3 L229.3,178.3 Q233.3,178.3 233.3,182.3 L233.3,398.0 Z' fill='#199e70'><title>Speed 4-bit, turbo depth 1, Code: 156.9 tokens per second</title></path>
+<text x='216.3' y='173.3' font-size='11' text-anchor='middle' fill='#f0efec'>156.9</text>
+<path d='M235.3,398.0 L235.3,180.0 Q235.3,176.0 239.3,176.0 L265.3,176.0 Q269.3,176.0 269.3,180.0 L269.3,398.0 Z' fill='#c98500'><title>Speed 4-bit, turbo depth 2, Code: 158.6 tokens per second</title></path>
+<text x='252.3' y='171.0' font-size='11' text-anchor='middle' fill='#f0efec'>158.6</text>
+<text x='199.3' y='420' font-size='13' text-anchor='middle' fill='#f0efec'>Code</text>
+<path d='M398.0,398.0 L398.0,251.9 Q398.0,247.9 402.0,247.9 L428.0,247.9 Q432.0,247.9 432.0,251.9 L432.0,398.0 Z' fill='#3987e5'><title>Balance 6-bit, depth 1, KV q8, German prose: 107.2 tokens per second</title></path>
+<text x='415.0' y='242.9' font-size='11' text-anchor='middle' fill='#f0efec'>107.2</text>
+<path d='M434.0,398.0 L434.0,239.2 Q434.0,235.2 438.0,235.2 L464.0,235.2 Q468.0,235.2 468.0,239.2 L468.0,398.0 Z' fill='#d95926'><title>Speed 4-bit, sustained default, German prose: 116.3 tokens per second</title></path>
+<text x='451.0' y='230.2' font-size='11' text-anchor='middle' fill='#f0efec'>116.3</text>
+<path d='M470.0,398.0 L470.0,201.8 Q470.0,197.8 474.0,197.8 L500.0,197.8 Q504.0,197.8 504.0,201.8 L504.0,398.0 Z' fill='#199e70'><title>Speed 4-bit, turbo depth 1, German prose: 143.0 tokens per second</title></path>
+<text x='487.0' y='192.8' font-size='11' text-anchor='middle' fill='#f0efec'>143</text>
+<path d='M506.0,398.0 L506.0,232.3 Q506.0,228.3 510.0,228.3 L536.0,228.3 Q540.0,228.3 540.0,232.3 L540.0,398.0 Z' fill='#c98500'><title>Speed 4-bit, turbo depth 2, German prose: 121.2 tokens per second</title></path>
+<text x='523.0' y='223.3' font-size='11' text-anchor='middle' fill='#f0efec'>121.2</text>
+<text x='470.0' y='420' font-size='13' text-anchor='middle' fill='#f0efec'>German prose</text>
+<path d='M668.7,398.0 L668.7,287.5 Q668.7,283.5 672.7,283.5 L698.7,283.5 Q702.7,283.5 702.7,287.5 L702.7,398.0 Z' fill='#3987e5'><title>Balance 6-bit, depth 1, KV q8, 43K context: 81.8 tokens per second</title></path>
+<text x='685.7' y='278.5' font-size='11' text-anchor='middle' fill='#f0efec'>81.8</text>
+<path d='M704.7,398.0 L704.7,285.0 Q704.7,281.0 708.7,281.0 L734.7,281.0 Q738.7,281.0 738.7,285.0 L738.7,398.0 Z' fill='#d95926'><title>Speed 4-bit, sustained default, 43K context: 83.6 tokens per second</title></path>
+<text x='721.7' y='276.0' font-size='11' text-anchor='middle' fill='#f0efec'>83.6</text>
+<path d='M740.7,398.0 L740.7,242.8 Q740.7,238.8 744.7,238.8 L770.7,238.8 Q774.7,238.8 774.7,242.8 L774.7,398.0 Z' fill='#199e70'><title>Speed 4-bit, turbo depth 1, 43K context: 113.7 tokens per second</title></path>
+<text x='757.7' y='233.8' font-size='11' text-anchor='middle' fill='#f0efec'>113.7</text>
+<path d='M776.7,398.0 L776.7,260.6 Q776.7,256.6 780.7,256.6 L806.7,256.6 Q810.7,256.6 810.7,260.6 L810.7,398.0 Z' fill='#c98500'><title>Speed 4-bit, turbo depth 2, 43K context: 101.0 tokens per second</title></path>
+<text x='793.7' y='251.6' font-size='11' text-anchor='middle' fill='#f0efec'>101</text>
+<text x='740.7' y='420' font-size='13' text-anchor='middle' fill='#f0efec'>43K context</text>
+<line x1='64' x2='876' y1='398' y2='398' stroke='#c3c2b7' stroke-width='1'/>
+</svg>

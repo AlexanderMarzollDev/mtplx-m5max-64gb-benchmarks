@@ -1,0 +1,14 @@
+{
+ "date": "2026-10-24",
+ "model": "Youssofal/Qwen3.8-27B-MTPLX-Optimized-Speed (4-bit), mtplx 2.12.2",
+ "settings": {"context_window": 262144, "MTPLX_COMPILED_VERIFY_GROWTH_RESERVE": "16384", "MTPLX_COMPILED_VERIFY_MAX_CONTEXT": "262144", "MTPLX_SESSION_BANK_MAX_BYTES": "4G"},
+ "prompt_tokens": 163961,
+ "outcome": "prefill completed and 4229 tokens were generated, then mtplx refused to grow the paged KV cache",
+ "error_kind": "memory_refusal",
+ "error_detail": "insufficient memory to grow the paged KV cache: growing 16 caches from 168192 to 252288 rows ... needs 15.72 GiB",
+ "peak_memory_gb": 57.8,
+ "swap_used_gb": 5.1,
+ "explanation": "With a 262K window the KV cache grows in large steps toward the window. On 64 GB the last step does not fit. Use a window close to what you need (e.g. 163840) so the final growth step stays small.",
+ "dense_decode_ceiling_tokens": {"default_15_percent_ram_64gb": 157286, "with_MTPLX_DENSE_DECODE_RAM_PERCENT_16": 167772,
+   "why": "Above the ceiling mtplx repages decode KV and the packed fast verify lane is excluded (developers measured 16-18 -> 12 tok/s at ~147K). Ceiling = RAM * percent / 65536 bytes per token (27B: 16 full-attention layers x K+V x 4 KV heads x 256 dims x bf16)."}
+}

@@ -1,0 +1,377 @@
+{
+ "date": "2026-10-22",
+ "machine": "MacBook Pro M5 Max 40-core GPU, 64 GB",
+ "note": "decode_tok_s_short = single short generation; agent_tasks = opencode run --auto on 4 small repos (bugfix, feature, refactor, explore) checked by hidden tests; single run each",
+ "engines": [
+  {
+   "engine": "mtplx 2.12.2",
+   "model": "Youssofal/Qwen3.6-35B-A3B-MTPLX-Optimized-Balance (6-bit)",
+   "id": "mtplx_q36_6",
+   "decode_tok_s_short": 113.3,
+   "prefill_tok_s_8k": 3489.0,
+   "prefill_tok_s_32k": 3365.0,
+   "tool_calls_ok": "8/8",
+   "agent_tasks": [
+    {
+     "task": "t1_bugfix",
+     "hidden_tests_passed": 6,
+     "hidden_tests_total": 6,
+     "seconds": 34
+    },
+    {
+     "task": "t2_feature",
+     "hidden_tests_passed": 5,
+     "hidden_tests_total": 5,
+     "seconds": 84
+    },
+    {
+     "task": "t3_refactor",
+     "hidden_tests_passed": 5,
+     "hidden_tests_total": 5,
+     "seconds": 43
+    },
+    {
+     "task": "t4_explore",
+     "hidden_tests_passed": 5,
+     "hidden_tests_total": 5,
+     "seconds": 47
+    }
+   ],
+   "agent_pass": "21/21",
+   "agent_seconds_total": 208
+  },
+  {
+   "engine": "mtplx 2.12.2",
+   "model": "samuelfaj/Qwen3.6-35B-A3B-8bit-MTPLX-Optimized-Speed (8-bit)",
+   "id": "mtplx_q36_8",
+   "decode_tok_s_short": 79.8,
+   "prefill_tok_s_8k": 3712.0,
+   "prefill_tok_s_32k": null,
+   "tool_calls_ok": "8/8",
+   "agent_tasks": [
+    {
+     "task": "t1_bugfix",
+     "hidden_tests_passed": 6,
+     "hidden_tests_total": 6,
+     "seconds": 45
+    },
+    {
+     "task": "t2_feature",
+     "hidden_tests_passed": 5,
+     "hidden_tests_total": 5,
+     "seconds": 83
+    },
+    {
+     "task": "t3_refactor",
+     "hidden_tests_passed": 5,
+     "hidden_tests_total": 5,
+     "seconds": 40
+    },
+    {
+     "task": "t4_explore",
+     "hidden_tests_passed": 5,
+     "hidden_tests_total": 5,
+     "seconds": 20
+    }
+   ],
+   "agent_pass": "21/21",
+   "agent_seconds_total": 188
+  },
+  {
+   "engine": "mtplx 2.12.2",
+   "model": "Youssofal/Qwen3.8-27B-MTPLX-Optimized-Speed (4-bit)",
+   "id": "mtplx_q38_4",
+   "decode_tok_s_short": 44.7,
+   "prefill_tok_s_8k": 665.0,
+   "prefill_tok_s_32k": 660.0,
+   "tool_calls_ok": "8/8",
+   "agent_tasks": [
+    {
+     "task": "t1_bugfix",
+     "hidden_tests_passed": 6,
+     "hidden_tests_total": 6,
+     "seconds": 94
+    },
+    {
+     "task": "t2_feature",
+     "hidden_tests_passed": 5,
+     "hidden_tests_total": 5,
+     "seconds": 218
+    },
+    {
+     "task": "t3_refactor",
+     "hidden_tests_passed": 5,
+     "hidden_tests_total": 5,
+     "seconds": 261
+    },
+    {
+     "task": "t4_explore",
+     "hidden_tests_passed": 5,
+     "hidden_tests_total": 5,
+     "seconds": 390
+    }
+   ],
+   "agent_pass": "21/21",
+   "agent_seconds_total": 963
+  },
+  {
+   "engine": "mtplx 2.12.2",
+   "model": "Youssofal/Qwen3.8-27B-MTPLX-Optimized-Quality (8-bit)",
+   "id": "mtplx_q38_8",
+   "decode_tok_s_short": 37.1,
+   "prefill_tok_s_8k": 554.0,
+   "prefill_tok_s_32k": 535.0,
+   "tool_calls_ok": "8/8",
+   "agent_tasks": [
+    {
+     "task": "t1_bugfix",
+     "hidden_tests_passed": 6,
+     "hidden_tests_total": 6,
+     "seconds": 133
+    },
+    {
+     "task": "t2_feature",
+     "hidden_tests_passed": 5,
+     "hidden_tests_total": 5,
+     "seconds": 361
+    },
+    {
+     "task": "t3_refactor",
+     "hidden_tests_passed": 5,
+     "hidden_tests_total": 5,
+     "seconds": 205
+    },
+    {
+     "task": "t4_explore",
+     "hidden_tests_passed": 5,
+     "hidden_tests_total": 5,
+     "seconds": 157
+    }
+   ],
+   "agent_pass": "21/21",
+   "agent_seconds_total": 856
+  },
+  {
+   "engine": "oMLX 0.7.1rc1",
+   "model": "Qwen3.6-35B-A3B Balance 6-bit (no MTP)",
+   "id": "omlx_q36_6",
+   "decode_tok_s_short": null,
+   "prefill_tok_s_8k": null,
+   "prefill_tok_s_32k": null,
+   "tool_calls_ok": null,
+   "agent_tasks": [
+    {
+     "task": "t1_bugfix",
+     "hidden_tests_passed": 6,
+     "hidden_tests_total": 6,
+     "seconds": 45
+    },
+    {
+     "task": "t2_feature",
+     "hidden_tests_passed": 5,
+     "hidden_tests_total": 5,
+     "seconds": 122
+    },
+    {
+     "task": "t3_refactor",
+     "hidden_tests_passed": 5,
+     "hidden_tests_total": 5,
+     "seconds": 44
+    },
+    {
+     "task": "t4_explore",
+     "hidden_tests_passed": 5,
+     "hidden_tests_total": 5,
+     "seconds": 55
+    }
+   ],
+   "agent_pass": "21/21",
+   "agent_seconds_total": 266
+  },
+  {
+   "engine": "oMLX 0.7.1rc1 + MTP",
+   "model": "Qwen3.6-35B-A3B Balance 6-bit (MTP enabled)",
+   "id": "omlx_mtp",
+   "decode_tok_s_short": 171.2,
+   "prefill_tok_s_8k": 2139.0,
+   "prefill_tok_s_32k": 3098.0,
+   "tool_calls_ok": "8/8",
+   "agent_tasks": [
+    {
+     "task": "t1_bugfix",
+     "hidden_tests_passed": 6,
+     "hidden_tests_total": 6,
+     "seconds": 49
+    },
+    {
+     "task": "t2_feature",
+     "hidden_tests_passed": 5,
+     "hidden_tests_total": 5,
+     "seconds": 63
+    },
+    {
+     "task": "t3_refactor",
+     "hidden_tests_passed": 5,
+     "hidden_tests_total": 5,
+     "seconds": 48
+    },
+    {
+     "task": "t4_explore",
+     "hidden_tests_passed": 5,
+     "hidden_tests_total": 5,
+     "seconds": 71
+    }
+   ],
+   "agent_pass": "21/21",
+   "agent_seconds_total": 231
+  },
+  {
+   "engine": "oMLX 0.7.1rc1",
+   "model": "Qwen3.8-27B MTPLX Optimized Speed 4-bit (no MTP)",
+   "id": "omlx_q38_4",
+   "decode_tok_s_short": 24.2,
+   "prefill_tok_s_8k": 637.0,
+   "prefill_tok_s_32k": 633.0,
+   "tool_calls_ok": "7/8",
+   "agent_tasks": [
+    {
+     "task": "t1_bugfix",
+     "hidden_tests_passed": 6,
+     "hidden_tests_total": 6,
+     "seconds": 251
+    },
+    {
+     "task": "t2_feature",
+     "hidden_tests_passed": 5,
+     "hidden_tests_total": 5,
+     "seconds": 520
+    },
+    {
+     "task": "t3_refactor",
+     "hidden_tests_passed": 5,
+     "hidden_tests_total": 5,
+     "seconds": 224
+    },
+    {
+     "task": "t4_explore",
+     "hidden_tests_passed": 5,
+     "hidden_tests_total": 5,
+     "seconds": 343
+    }
+   ],
+   "agent_pass": "21/21",
+   "agent_seconds_total": 1338
+  },
+  {
+   "engine": "oMLX 0.7.1rc1",
+   "model": "Qwen3-Coder-Next (MLX)",
+   "id": "omlx_coder",
+   "decode_tok_s_short": null,
+   "prefill_tok_s_8k": null,
+   "prefill_tok_s_32k": null,
+   "tool_calls_ok": null,
+   "agent_tasks": [
+    {
+     "task": "t1_bugfix",
+     "hidden_tests_passed": 0,
+     "hidden_tests_total": 6,
+     "seconds": 98
+    },
+    {
+     "task": "t2_feature",
+     "hidden_tests_passed": 2,
+     "hidden_tests_total": 5,
+     "seconds": 96
+    },
+    {
+     "task": "t3_refactor",
+     "hidden_tests_passed": 0,
+     "hidden_tests_total": 5,
+     "seconds": 90
+    },
+    {
+     "task": "t4_explore",
+     "hidden_tests_passed": 1,
+     "hidden_tests_total": 5,
+     "seconds": 101
+    }
+   ],
+   "agent_pass": "3/21",
+   "agent_seconds_total": 385
+  },
+  {
+   "engine": "LM Studio (MLX engine, ignores MTP)",
+   "model": "qwen/qwen3.8-27b 4-bit",
+   "id": "lms_q38_4",
+   "decode_tok_s_short": 32.5,
+   "prefill_tok_s_8k": 926.0,
+   "prefill_tok_s_32k": 735.0,
+   "tool_calls_ok": "7/8",
+   "agent_tasks": [
+    {
+     "task": "t1_bugfix",
+     "hidden_tests_passed": 6,
+     "hidden_tests_total": 6,
+     "seconds": 150
+    },
+    {
+     "task": "t2_feature",
+     "hidden_tests_passed": 3,
+     "hidden_tests_total": 5,
+     "seconds": 600
+    },
+    {
+     "task": "t3_refactor",
+     "hidden_tests_passed": 5,
+     "hidden_tests_total": 5,
+     "seconds": 161
+    },
+    {
+     "task": "t4_explore",
+     "hidden_tests_passed": 5,
+     "hidden_tests_total": 5,
+     "seconds": 413
+    }
+   ],
+   "agent_pass": "19/21",
+   "agent_seconds_total": 1324
+  },
+  {
+   "engine": "lithos-metal 0.1.2",
+   "model": "nvidia/Qwen3.8-27B-NVFP4 + LithosAI DSpark draft",
+   "id": "lithos",
+   "decode_tok_s_short": 77.4,
+   "prefill_tok_s_8k": 323.0,
+   "prefill_tok_s_32k": 386.0,
+   "tool_calls_ok": "8/8",
+   "agent_tasks": [
+    {
+     "task": "t1_bugfix",
+     "hidden_tests_passed": 6,
+     "hidden_tests_total": 6,
+     "seconds": 120
+    },
+    {
+     "task": "t2_feature",
+     "hidden_tests_passed": 4,
+     "hidden_tests_total": 5,
+     "seconds": 208
+    },
+    {
+     "task": "t3_refactor",
+     "hidden_tests_passed": 5,
+     "hidden_tests_total": 5,
+     "seconds": 167
+    },
+    {
+     "task": "t4_explore",
+     "hidden_tests_passed": 5,
+     "hidden_tests_total": 5,
+     "seconds": 195
+    }
+   ],
+   "agent_pass": "20/21",
+   "agent_seconds_total": 690
+  }
+ ]
+}

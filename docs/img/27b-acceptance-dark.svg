@@ -1,0 +1,52 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='900' height='470' viewBox='0 0 900 470' font-family='-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif'>
+<rect width='900' height='470' fill='#1a1a19'/>
+<text x='64' y='34' font-size='19' font-weight='600' fill='#f0efec'>MTP draft acceptance by position, Qwen3.8-27B on a 64GB Mac M5 Max</text>
+<text x='64' y='58' font-size='13' fill='#c3c2b7'>Share of verify steps in which draft token n was still accepted (depth 3)</text>
+<rect x='64' y='76' width='12' height='12' rx='3' fill='#3987e5'/>
+<text x='82' y='87' font-size='13' fill='#f0efec'>Code</text>
+<rect x='119.6' y='76' width='12' height='12' rx='3' fill='#d95926'/>
+<text x='137.6' y='87' font-size='13' fill='#f0efec'>125K-context docs</text>
+<rect x='271.4' y='76' width='12' height='12' rx='3' fill='#199e70'/>
+<text x='289.4' y='87' font-size='13' fill='#f0efec'>43K-context summary</text>
+<rect x='438.0' y='76' width='12' height='12' rx='3' fill='#c98500'/>
+<text x='456.0' y='87' font-size='13' fill='#f0efec'>German prose</text>
+<line x1='64' x2='876' y1='398.0' y2='398.0' stroke='#383835' stroke-width='1'/>
+<text x='56' y='402.0' font-size='11' text-anchor='end' fill='#c3c2b7'>0</text>
+<line x1='64' x2='876' y1='328.0' y2='328.0' stroke='#383835' stroke-width='1'/>
+<text x='56' y='332.0' font-size='11' text-anchor='end' fill='#c3c2b7'>50</text>
+<line x1='64' x2='876' y1='258.0' y2='258.0' stroke='#383835' stroke-width='1'/>
+<text x='56' y='262.0' font-size='11' text-anchor='end' fill='#c3c2b7'>100</text>
+<line x1='64' x2='876' y1='188.0' y2='188.0' stroke='#383835' stroke-width='1'/>
+<text x='56' y='192.0' font-size='11' text-anchor='end' fill='#c3c2b7'>150</text>
+<line x1='64' x2='876' y1='118.0' y2='118.0' stroke='#383835' stroke-width='1'/>
+<text x='56' y='122.0' font-size='11' text-anchor='end' fill='#c3c2b7'>200</text>
+<text x='14' y='258.0' font-size='12' fill='#c3c2b7' transform='rotate(-90 14 258.0)' text-anchor='middle'>percent of steps</text>
+<path d='M127.3,398.0 L127.3,274.6 Q127.3,270.6 131.3,270.6 L157.3,270.6 Q161.3,270.6 161.3,274.6 L161.3,398.0 Z' fill='#3987e5'><title>Code, Position 1: 91 percent of steps</title></path>
+<text x='144.3' y='265.6' font-size='11' text-anchor='middle' fill='#f0efec'>91</text>
+<path d='M163.3,398.0 L163.3,283.0 Q163.3,279.0 167.3,279.0 L193.3,279.0 Q197.3,279.0 197.3,283.0 L197.3,398.0 Z' fill='#d95926'><title>125K-context docs, Position 1: 85 percent of steps</title></path>
+<text x='180.3' y='274.0' font-size='11' text-anchor='middle' fill='#f0efec'>85</text>
+<path d='M199.3,398.0 L199.3,287.2 Q199.3,283.2 203.3,283.2 L229.3,283.2 Q233.3,283.2 233.3,287.2 L233.3,398.0 Z' fill='#199e70'><title>43K-context summary, Position 1: 82 percent of steps</title></path>
+<text x='216.3' y='278.2' font-size='11' text-anchor='middle' fill='#f0efec'>82</text>
+<path d='M235.3,398.0 L235.3,301.2 Q235.3,297.2 239.3,297.2 L265.3,297.2 Q269.3,297.2 269.3,301.2 L269.3,398.0 Z' fill='#c98500'><title>German prose, Position 1: 72 percent of steps</title></path>
+<text x='252.3' y='292.2' font-size='11' text-anchor='middle' fill='#f0efec'>72</text>
+<text x='199.3' y='420' font-size='13' text-anchor='middle' fill='#f0efec'>Position 1</text>
+<path d='M398.0,398.0 L398.0,290.0 Q398.0,286.0 402.0,286.0 L428.0,286.0 Q432.0,286.0 432.0,290.0 L432.0,398.0 Z' fill='#3987e5'><title>Code, Position 2: 80 percent of steps</title></path>
+<text x='415.0' y='281.0' font-size='11' text-anchor='middle' fill='#f0efec'>80</text>
+<path d='M434.0,398.0 L434.0,305.4 Q434.0,301.4 438.0,301.4 L464.0,301.4 Q468.0,301.4 468.0,305.4 L468.0,398.0 Z' fill='#d95926'><title>125K-context docs, Position 2: 69 percent of steps</title></path>
+<text x='451.0' y='296.4' font-size='11' text-anchor='middle' fill='#f0efec'>69</text>
+<path d='M470.0,398.0 L470.0,316.6 Q470.0,312.6 474.0,312.6 L500.0,312.6 Q504.0,312.6 504.0,316.6 L504.0,398.0 Z' fill='#199e70'><title>43K-context summary, Position 2: 61 percent of steps</title></path>
+<text x='487.0' y='307.6' font-size='11' text-anchor='middle' fill='#f0efec'>61</text>
+<path d='M506.0,398.0 L506.0,340.4 Q506.0,336.4 510.0,336.4 L536.0,336.4 Q540.0,336.4 540.0,340.4 L540.0,398.0 Z' fill='#c98500'><title>German prose, Position 2: 44 percent of steps</title></path>
+<text x='523.0' y='331.4' font-size='11' text-anchor='middle' fill='#f0efec'>44</text>
+<text x='470.0' y='420' font-size='13' text-anchor='middle' fill='#f0efec'>Position 2</text>
+<path d='M668.7,398.0 L668.7,306.8 Q668.7,302.8 672.7,302.8 L698.7,302.8 Q702.7,302.8 702.7,306.8 L702.7,398.0 Z' fill='#3987e5'><title>Code, Position 3: 68 percent of steps</title></path>
+<text x='685.7' y='297.8' font-size='11' text-anchor='middle' fill='#f0efec'>68</text>
+<path d='M704.7,398.0 L704.7,323.6 Q704.7,319.6 708.7,319.6 L734.7,319.6 Q738.7,319.6 738.7,323.6 L738.7,398.0 Z' fill='#d95926'><title>125K-context docs, Position 3: 56 percent of steps</title></path>
+<text x='721.7' y='314.6' font-size='11' text-anchor='middle' fill='#f0efec'>56</text>
+<path d='M740.7,398.0 L740.7,340.4 Q740.7,336.4 744.7,336.4 L770.7,336.4 Q774.7,336.4 774.7,340.4 L774.7,398.0 Z' fill='#199e70'><title>43K-context summary, Position 3: 44 percent of steps</title></path>
+<text x='757.7' y='331.4' font-size='11' text-anchor='middle' fill='#f0efec'>44</text>
+<path d='M776.7,398.0 L776.7,365.6 Q776.7,361.6 780.7,361.6 L806.7,361.6 Q810.7,361.6 810.7,365.6 L810.7,398.0 Z' fill='#c98500'><title>German prose, Position 3: 26 percent of steps</title></path>
+<text x='793.7' y='356.6' font-size='11' text-anchor='middle' fill='#f0efec'>26</text>
+<text x='740.7' y='420' font-size='13' text-anchor='middle' fill='#f0efec'>Position 3</text>
+<line x1='64' x2='876' y1='398' y2='398' stroke='#c3c2b7' stroke-width='1'/>
+</svg>

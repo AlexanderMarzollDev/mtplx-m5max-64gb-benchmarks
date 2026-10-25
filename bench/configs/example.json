@@ -1,0 +1,14 @@
+[
+ {"label": "27b-default", "model": "Youssofal/Qwen3.8-27B-MTPLX-Optimized-Speed",
+  "flags": ["--paged-kv-quantization", "off"], "env": {}},
+ {"label": "27b-reserve16k", "model": "Youssofal/Qwen3.8-27B-MTPLX-Optimized-Speed",
+  "flags": ["--paged-kv-quantization", "off"],
+  "env": {"MTPLX_COMPILED_VERIFY_GROWTH_RESERVE": "16384", "MTPLX_COMPILED_VERIFY_MAX_CONTEXT": "262144"}},
+ {"label": "35b4-turbo-d1", "model": "Youssofal/Qwen3.6-35B-A3B-MTPLX-Optimized-Speed",
+  "flags": ["--profile", "turbo", "--depth", "1", "--paged-kv-quantization", "off"],
+  "env": {"MTPLX_COMPILED_VERIFY_GROWTH_RESERVE": "16384", "MTPLX_COMPILED_VERIFY_MAX_CONTEXT": "262144"}},
+ {"label": "27b-125k", "model": "Youssofal/Qwen3.8-27B-MTPLX-Optimized-Speed", "context": 163840,
+  "flags": ["--paged-kv-quantization", "off"],
+  "env": {"MTPLX_COMPILED_VERIFY_GROWTH_RESERVE": "16384", "MTPLX_COMPILED_VERIFY_MAX_CONTEXT": "262144",
+          "MTPLX_DENSE_DECODE_RAM_PERCENT": "16", "MTPLX_SESSION_BANK_MAX_BYTES": "8G"}}
+]

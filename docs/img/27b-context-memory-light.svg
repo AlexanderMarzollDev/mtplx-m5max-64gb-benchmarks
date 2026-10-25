@@ -1,0 +1,19 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='900' height='250' viewBox='0 0 900 250' font-family='-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif'>
+<rect width='900' height='250' fill='#fcfcfb'/>
+<text x='24' y='34' font-size='19' font-weight='600' fill='#0b0b0b'>Qwen3.8-27B peak unified memory vs. context length, 64GB Mac M5 Max</text>
+<text x='24' y='58' font-size='13' fill='#52514e'>Includes model weights, KV cache and mtplx session cache; 165K run aborted by the memory guard</text>
+<text x='290' y='102' font-size='12.5' text-anchor='end' fill='#0b0b0b'>~90-token prompt</text>
+<path d='M300,89 L509.7,89 Q513.7,89 513.7,93 L513.7,103 Q513.7,107 509.7,107 L300,107 Z' fill='#eda100'><title>~90-token prompt: 23.3 GB</title></path>
+<text x='519.7' y='102' font-size='12' fill='#0b0b0b'>23.3</text>
+<text x='290' y='132' font-size='12.5' text-anchor='end' fill='#0b0b0b'>43K-token prompt</text>
+<path d='M300,119 L639.9,119 Q643.9,119 643.9,123 L643.9,133 Q643.9,137 639.9,137 L300,137 Z' fill='#eda100'><title>43K-token prompt: 37.5 GB</title></path>
+<text x='649.9' y='132' font-size='12' fill='#0b0b0b'>37.5</text>
+<text x='290' y='162' font-size='12.5' text-anchor='end' fill='#0b0b0b'>125K-token prompt</text>
+<path d='M300,149 L681.1,149 Q685.1,149 685.1,153 L685.1,163 Q685.1,167 681.1,167 L300,167 Z' fill='#eda100'><title>125K-token prompt: 42 GB</title></path>
+<text x='691.1' y='162' font-size='12' fill='#0b0b0b'>42</text>
+<text x='290' y='192' font-size='12.5' text-anchor='end' fill='#0b0b0b'>164K-token prompt (aborted)</text>
+<path d='M300,179 L826.0,179 Q830.0,179 830.0,183 L830.0,193 Q830.0,197 826.0,197 L300,197 Z' fill='#eda100'><title>164K-token prompt (aborted): 57.8 GB</title></path>
+<text x='836.0' y='192' font-size='12' fill='#0b0b0b'>57.8</text>
+<line x1='300' x2='300' y1='84' y2='204' stroke='#52514e' stroke-width='1'/>
+<text x='300' y='236' font-size='11' fill='#52514e'>GB  ·  45 GB = our budget so a browser still fits</text>
+</svg>
